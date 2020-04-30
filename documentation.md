@@ -79,3 +79,4 @@ RESULT
    In a single click we can setup an entire environment of wordpress server with sql database using docker-compose.
 
 THANKS A LOT SIR FOR YOUR TIME AND GUIDANCE
+-------------------------------------------
