@@ -1,3 +1,25 @@
+MY MENTOR
+------------
+    
+    I have learnt this docker technology in IIEC_RISE campaign which was started ny the most renoved world record holder Mr.Vimal Daga to make india future ready.I am very thankful towards his for his campaign.I also learnt redhat linux version 8 (RHEL 8) under his guidance 
+
+AGENDA
+-------
+
+    TO CREATE AN INFRASTRUCTURE WHICH HAS A WORDPRESS SERVER AND A SQL DATABASE WHICH ARE INTERLINKED WITH EACH OTHER TO PROVIDE SERVICES. 
+    
+PRECONFIGURATIONS
+-----------------
+
+    1-A system with RHEL installed in it(either baro-metal or virtual).
+    2-You must know some basic of linux and docker.
+    3-Install docker and docker-compose
+    Follow the below steps to download docker-compose file.
+        -enter the below code in commad line in linux terminal
+        sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o             /usr/local/bin/docker-compose
+        -Now we have to give permissions to the file
+        sudo chmod +x /usr/local/bin/docker-compose
+
 DOCKER
 ------
     
@@ -8,12 +30,14 @@ DOCKER-COMPOSE
     
     Docker compose file has infrastructure as code which means that we can launch an entire infrastructure in a single click.Infrastructure is nothing but a set of operating systems working with each other to provide services.
 
+IMAGES REQUIRED
+---------------
+    For this project we are going to use to images:
+    1- wordpress image with pre-configured apache server and php,we can download this image from docker public repository by using the below command
+    docker pull wordpress:5.1.1-php7.3-apache
+    2-Mysql image as backend database,we can download this image from docker public repository by using the below command
+    docker pull mysql:5.7
 
-AGENDA
--------
-
- TO CREATE AN INFRASTRUCTURE WHICH HAS A SERVER AND A DATABASE WHICH ARE INTERLINKED WITH EACH OTHER TO PROVIDE SERVICES. 
-    
 CREATING A COMPOSE FILE
 -----------------------
 
@@ -54,3 +78,4 @@ RESULT
 
    In a single click we can setup an entire environment of wordpress server with sql database using docker-compose.
 
+THANKS A LOT SIR FOR YOUR TIME AND GUIDANCE
